@@ -1,0 +1,49 @@
+
+:root{
+  --accent: #0d6efd; /* Bootstrap primary blue; change if you like */
+}
+
+/* Accent utilities */
+a, .link-primary { color: var(--accent); }
+a:hover { color: #0b5ed7; }
+
+.navbar .nav-link.active,
+.navbar .nav-link:focus,
+.navbar .nav-link:hover {
+  color: var(--accent);
+}
+
+/* Small underline for the current section (like your screenshot) */
+.navbar .nav-link.active {
+  position: relative;
+}
+.navbar .nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0.4rem;
+  right: 0.4rem;
+  bottom: 0.2rem;
+  height: 2px;
+  background: var(--accent);
+}
+
+/* Code blocks */
+pre code {
+  display: block;
+  padding: 1rem;
+  border-radius: .5rem;
+  overflow-x: auto;
+  font-size: 0.95rem;
+}
+
+/* Optional: nicer images */
+.project-hero {
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  margin-bottom: 1.25rem;
+}
+
+.figure-caption {
+  font-size: .9rem;
+  opacity: .85;
+}
