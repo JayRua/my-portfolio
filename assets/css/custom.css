@@ -199,6 +199,20 @@ pre code {
   letter-spacing: 0.02em;
 }
 
+/* Hero tagline tweaks */
+.hero .tagline {
+  line-height: 1.7;
+  margin-top: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .hero .tagline {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 1rem;
+  }
+}
+
 .blog-details-page code,
 .blog-details-page pre {
   font-family: var(--blog-mono);
