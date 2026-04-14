@@ -48,6 +48,17 @@ pre code {
   opacity: .85;
 }
 
+/* Inplementing alternate colours to sections */
+.section-light {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+
+.section-blue {
+  background-color: #f9fbff;
+  padding: 60px 0;
+}
+
 /* Blog cards */
 .blog-card {
   background: #ffffff;
