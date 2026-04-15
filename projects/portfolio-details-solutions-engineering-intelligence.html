@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Presales Skill Analysis Platform</title>
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon" />
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS -->
+    <link href="../assets/css/main.css" rel="stylesheet" />
+    <link href="../assets/css/custom.css" rel="stylesheet" />
+
+    <!-- highlight.js theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css"
+    />
+  </head>
+
+  <body class="portfolio-details-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="../index.html#hero">Home</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#portfolio">Projects</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="page-title" data-aos="fade">
+        <div class="container d-lg-flex justify-content-between align-items-center">
+          <h1 class="mb-2 mb-lg-0">Presales Skill Analysis Platform</h1>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="../index.html">Home</a></li>
+              <li class="current">Presales Skill Analysis Platform</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+
+      <section id="portfolio-details" class="portfolio-details section">
+        <div class="container" data-aos="fade-up">
+          <div class="portfolio-details-slider swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "slidesPerView": 1,
+                "navigation": {
+                  "nextEl": ".swiper-button-next",
+                  "prevEl": ".swiper-button-prev"
+                },
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                }
+              }
+            </script>
+
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <figure class="m-0">
+                  <img
+                    src=""
+                    class="img-fluid rounded"
+                    alt=""
+                  />
+                  <figcaption class="small text-muted mt-2 text-center">
+                    Streamlit intake and analytics workflow
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="row justify-content-between gy-4 mt-4">
+            <div class="col-lg-8" data-aos="fade-up">
+              <div class="portfolio-description">
+                <h2>Presales Skill Analysis Platform</h2>
+                <p>
+                  Built a Python, PostgreSQL, and Streamlit analytics workflow to identify the most common skills, tools, and hiring signals in junior solutions engineering and presales roles in Ireland.
+                </p>
+
+                <h3>Overview</h3>
+                <p>
+                  I built this project to answer a practical question: what do companies actually look for in junior solutions engineers, presales engineers, and solutions consultants?
+                </p>
+                <p>
+                  Job descriptions for these roles are spread across LinkedIn, company career pages, and niche job boards, and the signal is noisy. Titles vary, requirements are inconsistent, and many job boards limit scraping. Instead of treating this as a pure data exercise, I approached it from a solutions engineering angle: define the user problem, design a practical workflow, build a reliable system, and surface the output in a way that non-technical stakeholders can use.
+                </p>
+
+                <h3>The Problem</h3>
+                <p>
+                  Candidates targeting junior solutions engineering roles often do not have a clear, evidence-based view of which technical skills appear most often, which cloud and SaaS concepts are expected at entry level, and how requirements vary across companies and role titles.
+                </p>
+                <ul>
+                  <li>which technical skills appear most often</li>
+                  <li>which cloud and SaaS concepts are actually expected at entry level</li>
+                  <li>how requirements vary across companies and role titles</li>
+                </ul>
+
+                <h3>My Approach</h3>
+                <p>
+                  I designed the project around a manual-first ingestion model. Instead of scraping job boards, I created a Streamlit intake app where a user can paste a job description and core metadata such as title, company, source, URL, and location.
+                </p>
+                <p>
+                  That design choice solved a few problems at once: it reduced legal and technical risk from scraping restrictions, improved data quality through structured intake, preserved raw descriptions for later parsing, and aligned the system with realistic analyst workflows.
+                </p>
+
+                <h3>What I Built</h3>
+                <ul>
+                  <li>A PostgreSQL schema for companies, job postings, normalized skills, job-skill relationships, analysis questions, results, and reports</li>
+                  <li>A Docker Compose setup for reproducible local database setup</li>
+                  <li>A Streamlit intake app that writes job postings directly into PostgreSQL</li>
+                  <li>Validation rules for required fields and minimum job description length</li>
+                  <li>A Streamlit dashboard for filtering postings by company and inspecting job details</li>
+                  <li>Supporting architecture and discovery artifacts documenting the solution for non-technical stakeholders</li>
+                </ul>
+
+                <h3>Tech Stack</h3>
+                <p>Python, PostgreSQL, SQL, Streamlit, Docker, psycopg / psycopg2, pandas</p>
+
+                <h3>Solutions Engineering Relevance</h3>
+                <p>
+                  This project is especially relevant to junior solutions engineer roles because it demonstrates more than coding. It shows how I think through ambiguous business problems and turn them into usable technical systems.
+                </p>
+                <p>
+                  The project demonstrates discovery and problem framing, translating business questions into a technical design, designing a relational data model around reporting needs, building internal tools for data intake, and making pragmatic tradeoffs around compliance, maintainability, and usability.
+                </p>
+
+                <h3 class="mt-4 mb-2">Key Technical Decisions</h3>
+                <h4>1. Manual-first ingestion instead of scraping</h4>
+                <p>
+                  This was the most important product decision in the project. Many job boards restrict automated scraping, and for a junior role dataset, a smaller but higher quality process was the better tradeoff.
+                </p>
+
+                <h4>2. Preserve raw data, derive structure later</h4>
+                <p>
+                  The schema stores the full raw description alongside normalized attributes. That means parsing logic can evolve without losing source data, which is important for explainability and future reprocessing.
+                </p>
+
+                <h4>3. Build the demo layer early</h4>
+                <p>
+                  I added a Streamlit dashboard so the project was not just a backend exercise. That made it easier to inspect the dataset, demonstrate the workflow, and show how the system could be used by a recruiter, hiring manager, or analyst.
+                </p>
+
+                <h3>Outcome</h3>
+                <p>
+                  The project established a working foundation for a job market intelligence tool focused on junior solutions engineering roles. It supports structured intake, reproducible local deployment with Docker, persistent storage in PostgreSQL, and interactive exploration through a dashboard.
+                </p>
+
+                <h3>What I Would Build Next</h3>
+                <ul>
+                  <li>Implement parsing and normalization modules for skill extraction and requirement classification</li>
+                  <li>Expose analytics through FastAPI endpoints</li>
+                  <li>Add charts for top skills, cloud platform demand, and essential vs desirable requirements</li>
+                  <li>Generate reusable summary reports for weekly or monthly market snapshots</li>
+                </ul>
+
+                <h3 class="mt-4 mb-2">Github Link</h3>
+                <p>
+                  The full codebase for this project is available on GitHub:
+                </p>
+                <a href="https://github.com/JayRua/presales-skill-analysis" target="_blank" rel="noreferrer">
+                  https://github.com/JayRua/presales-skill-analysis
+                </a>
+
+              </div>
+            </div>
+
+            <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+              <div>
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Category:</strong> AI Applications</li>
+                  <li><strong>Project date:</strong> April, 2026</li>
+                  <li>
+                    <strong>Project URL:</strong>
+                    <a href="https://github.com/JayRua/job-market-intelligence" target="_blank" rel="noreferrer">https://github.com/JayRua/job-market-intelligence</a>
+                  </li>
+                </ul>
+                <div class="mt-4">
+                  <a class="btn btn-secondary" href="../index.html#projects">← Back to Projects Home Page</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer accent-background">
+      <div class="container">
+        <div class="copyright text-center">
+          <p>
+            © <span>Copyright</span> <strong class="px-1 sitename">2026</strong>
+            <span>All Rights Reserved</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <div id="preloader"></div>
+
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="../assets/vendor/typed.js/typed.umd.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/code.js"></script>
+  </body>
+</html>

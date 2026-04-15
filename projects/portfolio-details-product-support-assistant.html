@@ -1,229 +1,365 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Product Support Assistant Project</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Product Support Assistant Project</title>
 
-  <!-- Favicons -->
-  <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon" />
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Vendor CSS -->
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Vendor CSS -->
+    <link
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="../assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Main CSS -->
-  <link href="../assets/css/main.css" rel="stylesheet">
-  <!-- (optional) your custom.css if you’re using it -->
-  <!-- <link href="../assets/css/custom.css" rel="stylesheet"> -->
+    <!-- Main CSS -->
+    <link href="../assets/css/main.css" rel="stylesheet" />
+    <link href="../assets/css/custom.css" rel="stylesheet" />
 
-  <!-- highlight.js theme -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
-</head>
+    <!-- highlight.js theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css"
+    />
+  </head>
 
-<body class="portfolio-details-page">
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-      <a href="../index.html" class="logo d-flex align-items-center">
-        <h1 class="sitename">DevFolio</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="../index.html#hero">Home</a></li>
-          <li><a href="../index.html#about">About</a></li>
-          <li><a href="../index.html#portfolio">Projects</a></li> <!-- use #portfolio if that’s the section id -->
-          <li><a href="../index.html#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-    </div>
-  </header>
-
-  <main class="main">
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-      <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Product Support Assistant Project</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="../index.html">Home</a></li>
-            <li class="current">Product Support Assistant Project</li>
-          </ol>
+  <body class="portfolio-details-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="../index.html#hero">Home</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#portfolio">Projects</a></li>
+            <!-- use #portfolio if that’s the section id -->
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
       </div>
-    </div>
+    </header>
 
-    <!-- Portfolio Details -->
-    <section id="portfolio-details" class="portfolio-details section">
-      <div class="container" data-aos="fade-up">
+    <main class="main">
+      <!-- Page Title -->
+      <div class="page-title" data-aos="fade">
+        <div
+          class="container d-lg-flex justify-content-between align-items-center"
+        >
+          <h1 class="mb-2 mb-lg-0">Product Support Assistant Project</h1>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="../index.html">Home</a></li>
+              <li class="current">Product Support Assistant Project</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
 
-        <!-- Slider with captions -->
-        <div class="portfolio-details-slider swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": { "delay": 3000 },
-              "slidesPerView": "auto",
-              "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" },
-              "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true }
-            }
-          </script>
+      <!-- Portfolio Details -->
+      <section id="portfolio-details" class="portfolio-details section">
+        <div class="container" data-aos="fade-up">
+          <!-- Slider with captions -->
+          <div class="portfolio-details-slider swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "slidesPerView": 1,
+                "navigation": {
+                  "nextEl": ".swiper-button-next",
+                  "prevEl": ".swiper-button-prev"
+                },
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                }
+              }
+            </script>
 
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide">
-              <figure class="m-0">
-                <img src="../assets/img/portfolio/product-support-assistant-0.jpg" class="img-fluid rounded" alt="FAQ editor">
-                <figcaption class="small text-muted mt-2 text-center">Product Support Assistant Project</figcaption>
-              </figure>
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <figure class="m-0">
+                  <img
+                    src="../assets/img/portfolio/product-support-assistant-0.jpg"
+                    class="img-fluid rounded"
+                    alt="FAQ editor"
+                  />
+                  <figcaption class="small text-muted mt-2 text-center">
+                    Product Support Assistant Project
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="swiper-slide">
+                <figure class="m-0">
+                  <img
+                    src="../assets/img/portfolio/product-support-assistant-1.png"
+                    class="img-fluid rounded"
+                    alt="Confidence scores"
+                  />
+                  <figcaption class="small text-muted mt-2 text-center">
+                    Product Info Inquery
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="swiper-slide">
+                <figure class="m-0">
+                  <img
+                    src="../assets/img/portfolio/product-support-assistant-2.png"
+                    class="img-fluid rounded"
+                    alt="Agent handoff"
+                  />
+                  <figcaption class="small text-muted mt-2 text-center">
+                    Clarify Product Details
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure class="m-0">
+                  <img
+                    src="../assets/img/portfolio/product-support-assistant-3.png"
+                    class="img-fluid rounded"
+                    alt="Agent handoff"
+                  />
+                  <figcaption class="small text-muted mt-2 text-center">
+                    Handle General Support Queries
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure class="m-0">
+                  <img
+                    src="../assets/img/portfolio/product-support-assistant-4.png"
+                    class="img-fluid rounded"
+                    alt="Agent handoff"
+                  />
+                  <figcaption class="small text-muted mt-2 text-center">
+                    Handle Customer Providing Wrong Info
+                  </figcaption>
+                </figure>
+              </div>
             </div>
 
-            <div class="swiper-slide">
-              <figure class="m-0">
-                <img src="../assets/img/portfolio/product-support-assistant-1.png" class="img-fluid rounded" alt="Confidence scores">
-                <figcaption class="small text-muted mt-2 text-center">Product Info Inquery</figcaption>
-              </figure>
-            </div>
-
-            <div class="swiper-slide">
-              <figure class="m-0">
-                <img src="../assets/img/portfolio/product-support-assistant-2.png" class="img-fluid rounded" alt="Agent handoff">
-                <figcaption class="small text-muted mt-2 text-center">Clarify Product Details</figcaption>
-              </figure>
-            </div>
-            <div class="swiper-slide">
-              <figure class="m-0">
-                <img src="../assets/img/portfolio/product-support-assistant-3.png" class="img-fluid rounded" alt="Agent handoff">
-                <figcaption class="small text-muted mt-2 text-center">Handle General Support Queries</figcaption>
-              </figure>
-            </div>
-            <div class="swiper-slide">
-              <figure class="m-0">
-                <img src="../assets/img/portfolio/product-support-assistant-4.png" class="img-fluid rounded" alt="Agent handoff">
-                <figcaption class="small text-muted mt-2 text-center">Handle Customer Providing Wrong Info</figcaption>
-              </figure>
-            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
           </div>
 
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-pagination"></div>
-        </div>
+          <div class="row justify-content-between gy-4 mt-4">
+            <!-- LEFT: main content -->
+            <div class="col-lg-8" data-aos="fade-up">
+              <div class="portfolio-description">
+                <h2>Overview</h2>
+                <p>
+                  This project simulates a lightweight product support system that combines product knowledge retrieval with AI-driven query classification and response generation.
+                </p>
+                <p>
+                  The goal was to design a practical, end-to-end assistant that mirrors how modern support systems operate: understanding user intent, retrieving relevant information, and guiding users toward resolution or escalation.
+                </p>
+                <p>
+                  Rather than building a generic chatbot, the focus was on structured workflows, clear routing logic, and controlled use of LLMs to ensure predictable and useful outputs.
+                </p>
 
-        <div class="row justify-content-between gy-4 mt-4">
-          <!-- LEFT: main content -->
-          <div class="col-lg-8" data-aos="fade-up">
-            <div class="portfolio-description">
-              <h2>Product Support Assistant</h2>
-              <p>
-                A lightweight assistant that answers product FAQs, classifies support messages, and routes
-                users to the right help — built to reduce ticket volume and improve response times.
-              </p>
+                <h3>The Problem</h3>
+                <p>
+                  Customer support teams and presales functions often deal with two overlapping types of queries:
+                </p>
+                <ul>
+                  <li>product-related questions (features, specs, comparisons)</li>
+                  <li>support issues (account, billing, technical problems)</li>
+                </ul>
+                <p>
+                  Without clear routing, these queries can:
+                </p>
+                <ul>
+                  <li>increase ticket volume unnecessarily</li>
+                  <li>delay resolution times</li>
+                  <li>create inconsistent customer experiences</li>
+                </ul>
+                <p>
+                  The challenge was to design a system that can reliably distinguish between these intents and respond appropriately.
+                </p>
 
-              <h3>Tech Overview</h3>
-              <p>
-                The app ingests a small product FAQ knowledge base, matches user intent, and returns answers
-                with confidence scores. When uncertain, it escalates with helpful context for a human agent.
-              </p>
+                <h3>My Approach</h3>
+                <p>
+                  I structured the assistant as a decision driven workflow rather than a generic chatbot.
+                </p>
+                <p>
+                  The system processes each user message through three stages:
+                </p>
+                <ol>
+                  <li><strong>Intent classification</strong><br>Determine whether the query is a Product Inquiry or Support Request using GPT</li>
+                  <li><strong>Context retrieval or routing</strong><br>
+                    <ul>
+                      <li>Product queries → fetch structured data from a predefined catalogue</li>
+                      <li>Support queries → classify into subcategories (billing, technical, account, etc.)</li>
+                    </ul>
+                  </li>
+                  <li><strong>Response generation</strong><br>Use GPT with controlled prompts and injected context to generate concise, relevant responses</li>
+                </ol>
+                <p>
+                  This approach ensures that the model is not hallucinating information but instead grounded in known data or predefined support flows.
+                </p>
 
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <ul class="mb-0">
-                    <li><strong>Role:</strong> Your role</li>
-                    <li><strong>Stack:</strong> Python, FastAPI, GPT APIs, Bootstrap</li>
-                    <li><strong>Outcome:</strong> e.g., faster responses, fewer tickets</li>
-                  </ul>
+                <h3>What I Built</h3>
+                <ul>
+                  <li>A Python based assistant implemented in Jupyter Notebook</li>
+                  <li>A structured product catalogue covering multiple categories (Laptops, Phones, TVs, Desktops)</li>
+                  <li>Query classification logic using GPT with JSON output parsing</li>
+                  <li>Product retrieval functions (by name and category)</li>
+                  <li>Support request sub-classification for routing (billing, technical, account management)</li>
+                  <li>Context-aware response generation using prompt engineering</li>
+                  <li>A command-line chat loop to simulate real user interaction</li>
+                </ul>
+
+                <h3>Tech Stack</h3>
+                <ul>
+                  <li>Python</li>
+                  <li>OpenAI API (GPT-3.5-turbo)</li>
+                  <li>Jupyter Notebook</li>
+                  <li>dotenv for environment management</li>
+                  <li>JSON parsing for structured outputs</li>
+                </ul>
+
+                <h3>Key Technical Decisions</h3>
+                <h4>1. Structured classification before response generation</h4>
+                <p>
+                  Instead of generating responses directly, the system first classifies intent and extracts structured data. This reduces ambiguity and improves reliability.
+                </p>
+
+                <h4>2. Grounding responses in a product catalogue</h4>
+                <p>
+                  Product answers are generated using predefined data rather than relying purely on the model. This avoids hallucination and ensures consistency.
+                </p>
+
+                <h4>3. Separation of logic and language generation</h4>
+                <p>
+                  Core logic (classification, retrieval, routing) is handled in Python, while GPT is used only for tasks where natural language adds value.
+                </p>
+
+                <h4>4. Controlled prompt design with JSON outputs</h4>
+                <p>
+                  Using strict JSON formats for classification ensures the system can reliably parse and act on model outputs.
+                </p>
+
+                <h3>Outcome</h3>
+                <p>
+                  The project delivers a working prototype of an AI powered support assistant that can:
+                </p>
+                <ul>
+                  <li>classify user intent accurately</li>
+                  <li>retrieve and summarise product information</li>
+                  <li>route support queries into structured categories</li>
+                  <li>generate clear, context-aware responses</li>
+                </ul>
+                <p>
+                  It demonstrates a complete flow from user input to actionable output, similar to real customer support or presales tooling.
+                </p>
+
+                <h3>What I Would Build Next</h3>
+                <ul>
+                  <li>Replace static product data with a database or API integration</li>
+                  <li>Add a web interface (e.g. Streamlit or React frontend)</li>
+                  <li>Implement conversation memory for multi-turn interactions</li>
+                  <li>Integrate with a ticketing system (e.g. Zendesk or Salesforce Service Cloud)</li>
+                  <li>Add analytics to track query types and resolution effectiveness</li>
+                  <li>Experiment with vector search for more flexible product retrieval</li>
+                </ul>
+
+                <h3>Repository</h3>
+                <p>
+                  GitHub: <a href="https://github.com/JayRua/product-support-assistant" target="_blank" rel="noreferrer">https://github.com/JayRua/product-support-assistant</a>
+                </p>
+              </div>
+            </div>
+
+            <!-- RIGHT: sidebar -->
+            <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+              <div>
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Category:</strong> AI Applications</li>
+                  <li><strong>Project date:</strong> 11 August, 2025</li>
+                  <li>
+                    <strong>Project URL:</strong>
+                    <a href="#"
+                      >https://github.com/JayRua/product-support-assistant/</a
+                    >
+                  </li>
+                </ul>
+                <div class="mt-4">
+                  <a class="btn btn-secondary" href="../index.html#projects"
+                    >← Back to Projects Home Page</a
+                  >
                 </div>
               </div>
-
-              <h3 class="mt-4 mb-2">Code Sample</h3>
-              <pre class="mt-0"><code class="language-python">from fastapi import FastAPI
-from pydantic import BaseModel
-
-app = FastAPI()
-
-class Query(BaseModel):
-    message: str
-
-@app.post("/ask")
-def ask(q: Query):
-    # 1) classify intent  2) retrieve FAQ  3) call LLM  4) return answer
-    intent = classify(q.message)
-    kb_hit = retrieve_faq(intent)
-    answer = call_llm(prompt_from(kb_hit, q.message))
-    return {"intent": intent, "answer": answer}</code></pre>
-
-              
             </div>
           </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </section>
+    </main>
 
-          <!-- RIGHT: sidebar -->
-          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
-            <div>
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category:</strong> AI Applications</li>
-                <li><strong>Project date:</strong> 11 August, 2025</li>
-                <li><strong>Project URL:</strong> <a href="#">https://github.com/JayRua/product-support-assistant/</a></li>
-              </ul>
-              <div class="mt-4">
-                <a class="btn btn-secondary" href="../index.html#projects">← Back to Projects Home Page</a>
-              </div>
-            </div>
-          </div>
-        </div> <!-- /.row -->
-      </div> <!-- /.container -->
-    </section>
-  </main>
-
-  <footer id="footer" class="footer accent-background">
-    <div class="container">
-      <div class="copyright text-center">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">DevFolio</strong> <span>All Rights Reserved</span></p>
+    <footer id="footer" class="footer accent-background">
+      <div class="container">
+        <div class="copyright text-center">
+          <p>
+            © <span>Copyright</span> <strong class="px-1 sitename">2026</strong>
+            <span>All Rights Reserved</span>
+          </p>
+        </div>
       </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="credits">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-  <!-- Vendor JS -->
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/php-email-form/validate.js"></script>
-  <script src="../assets/vendor/aos/aos.js"></script>
-  <script src="../assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- Vendor JS -->
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="../assets/vendor/typed.js/typed.umd.js"></script>
 
-  <!-- highlight.js core -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <!-- highlight.js core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 
-  <!-- Main JS -->
-  <script src="../assets/js/main.js"></script>
-  <script src="../assets/js/code.js"></script>
-</body>
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/code.js"></script>
+  </body>
 </html>
