@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>GCP VPC Architecture</title>
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon" />
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS -->
+    <link href="../assets/css/main.css" rel="stylesheet" />
+    <link href="../assets/css/custom.css" rel="stylesheet" />
+
+    <!-- highlight.js theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css"
+    />
+  </head>
+
+  <body class="portfolio-details-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="../index.html#hero">Home</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#portfolio">Projects</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="page-title" data-aos="fade">
+        <div class="container d-lg-flex justify-content-between align-items-center">
+          <h1 class="mb-2 mb-lg-0">GCP VPC Architecture</h1>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="../index.html">Home</a></li>
+              <li class="current">GCP VPC Architecture</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+
+      <section id="portfolio-details" class="portfolio-details section">
+        <div class="container" data-aos="fade-up">
+          <div class="portfolio-details-slider swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "slidesPerView": 1,
+                "navigation": {
+                  "nextEl": ".swiper-button-next",
+                  "prevEl": ".swiper-button-prev"
+                },
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                }
+              }
+            </script>
+
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <figure class="m-0">
+                  <img
+                    src="../assets/img/portfolio/gcp-vpc-architecture.jpg"
+                    class="img-fluid rounded"
+                    alt="Google Cloud VPC architecture project"
+                  />
+                  <figcaption class="small text-muted mt-2 text-center">
+                    Google Cloud server and client VM architecture
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="row justify-content-between gy-4 mt-4">
+            <div class="col-lg-8" data-aos="fade-up">
+              <div class="portfolio-description">
+                <h2>GCP VPC Architecture</h2>
+                <p>
+                  Built a Google Cloud networking and Linux administration project using two Rocky Linux 8 virtual machines, private DNS, Apache, MySQL, XRDP, and LVM storage.
+                </p>
+
+                <h3>Overview</h3>
+                <p>
+                  I built this project to demonstrate practical cloud infrastructure and Linux administration skills in a simple but structured way.
+                </p>
+                <p>
+                  The project uses two Rocky Linux 8 virtual machines on the Google Cloud default network. One machine acts as the server and hosts Apache, MySQL, and extra logical volume storage. The second machine acts as the client and is used to test web, DNS, remote desktop, and database connectivity across the environment.
+                </p>
+
+                <h3>The Problem</h3>
+                <p>
+                  A junior solutions engineer should be able to do more than launch virtual machines. They should understand how services are installed, how systems communicate over a network, how access is controlled, and how to test whether the environment is working correctly.
+                </p>
+                <ul>
+                  <li>deploy and configure Linux virtual machines in Google Cloud</li>
+                  <li>set up and test web, database, and DNS services across multiple systems</li>
+                  <li>apply basic security and administration controls such as firewall rules, XRDP access, LVM storage, and delegated sudo permissions</li>
+                </ul>
+
+                <h3>My Approach</h3>
+                <p>
+                  I kept the project practical and close to core infrastructure tasks. I used separate server and client machines so I could configure services on one side and test them from another side.
+                </p>
+                <p>
+                  I also used command-line configuration throughout the project so the setup would show Linux administration skills clearly rather than only cloud console usage.
+                </p>
+
+                <h3>What I Built</h3>
+                <ul>
+                  <li>Two Rocky Linux 8 virtual machines: <code>venus-linuxserver1</code> and <code>venus-client1</code></li>
+                  <li>An Apache web server serving a custom page for <code>costacoffee.ie</code></li>
+                  <li>A MySQL server with a <code>Library</code> database and a <code>members</code> table</li>
+                  <li>A private Google Cloud DNS zone with A and CNAME records for <code>costacoffee.ie</code>, <code>www</code>, and <code>ftp</code></li>
+                  <li>A GNOME desktop and XRDP setup on the client machine for remote graphical access</li>
+                  <li>A 300GB extra disk configured with LVM and mounted at <code>/var/marketing</code></li>
+                  <li>A delegated sudo user with restricted access through the <code>sudoers</code> file</li>
+                </ul>
+
+                <h3>Tech Stack</h3>
+                <p>Google Cloud Platform, Rocky Linux 8, Apache, MySQL, Cloud DNS, XRDP, GNOME, firewalld, LVM</p>
+
+                <h3>Solutions Engineering Relevance</h3>
+                <p>
+                  This project is relevant to junior solutions engineering roles because it shows that I can understand and explain how different infrastructure components work together.
+                </p>
+                <p>
+                  It demonstrates cloud VM deployment, Linux command-line administration, service configuration, network testing, and clear technical documentation. It also shows that I can take a simple architecture and explain the reasoning behind each part of it.
+                </p>
+
+                <h3 class="mt-4 mb-2">Key Technical Decisions</h3>
+                <h4>1. Separate server and client roles</h4>
+                <p>
+                  I used one VM for hosting services and one VM for testing them. This made it easier to demonstrate real network communication instead of configuring everything on a single machine.
+                </p>
+
+                <h4>2. Private DNS instead of IP-only access</h4>
+                <p>
+                  I configured a private DNS zone so the services could be tested by name, which makes the setup easier to understand and closer to how real environments are used.
+                </p>
+
+                <h4>3. Keep the build simple but hands-on</h4>
+                <p>
+                  I stayed with core Google Cloud and Linux tools rather than adding extra platforms or automation. That kept the project focused on the basics while still showing practical technical skills.
+                </p>
+
+                <h3>Outcome</h3>
+                <p>
+                  The project produced a working Google Cloud environment where the client machine could resolve the private DNS records, load the Apache website, connect to the MySQL database, access a graphical desktop through XRDP, and verify that the storage and sudo delegation tasks were configured correctly.
+                </p>
+
+                <h3>What I Would Build Next</h3>
+                <ul>
+                  <li>add more internal service testing between the two machines</li>
+                  <li>document firewall rules and validation steps in even more detail</li>
+                  <li>extend the environment with additional Linux administration tasks such as backup or monitoring basics</li>
+                  <li>add screenshots to the GitHub repository to support the written setup guide</li>
+                </ul>
+
+                <h3 class="mt-4 mb-2">Github Link</h3>
+                <p>
+                  The full codebase for this project is available on GitHub:
+                </p>
+                <a href="https://github.com/JayRua/gcp-vpc-architecture/" target="_blank" rel="noreferrer">
+                  https://github.com/JayRua/gcp-vpc-architecture/
+                </a>
+
+              </div>
+            </div>
+
+            <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+              <div>
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Category:</strong> Cloud Infrastructure</li>
+                  <li><strong>Project date:</strong> April, 2026</li>
+                  <li>
+                    <strong>Project URL:</strong>
+                    <a href="https://github.com/JayRua/gcp-vpc-architecture/" target="_blank" rel="noreferrer">https://github.com/JayRua/gcp-vpc-architecture/</a>
+                  </li>
+                </ul>
+                <div class="mt-4">
+                  <a class="btn btn-secondary" href="../index.html#projects">← Back to Projects Home Page</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer accent-background">
+      <div class="container">
+        <div class="copyright text-center">
+          <p>
+            © <span>Copyright</span> <strong class="px-1 sitename">2026</strong>
+            <span>All Rights Reserved</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <div id="preloader"></div>
+
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="../assets/vendor/typed.js/typed.umd.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/code.js"></script>
+  </body>
+</html>
